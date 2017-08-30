@@ -21,26 +21,42 @@
                         <li>Cleaner code</li>
                         <li>Distributed system</li>
                     </ul>
+                    <p>Anybody worked with git before? Other version control systems?</p>
                 </section>
 
                 <section>
                     <section>
                         <h1>Basics</h1>
-                        <p><a href="http://github.com/casperravenhorst/git-starter-course">http://github.com/casperravenhorst/git-starter-course</a></p>
+                        <p><a href="http://tiny.cc/istore-gsc">tiny.cc/istore-gsc</a></p>
                     </section>
                     <section>
-                        <h1>Cloning</h1>
+                        <h3>Cloning</h3>
                         <pre><code>git clone &lt;adres&gt;</code></pre>
                         <p>Copies a remote repository into the current directory - will make a subfolder git-starter-course in this case.</p>
                     </section>
                     <section>
-                        <h1>Committing</h1>
+                        <h3>Committing</h3>
+                        <p>A commit is:
+                        <ul>
+                          <li>a version, a state, of the project</li>
+                          <li>a set of changes on top of the commit before it</li>
+                          <li>an identifiable state of the project that you can link to</li>
+                        </ul></p>
+                    </section>
+                    <section>
+                        <h3>Committing</h3>
                         <pre><code>git status</code></pre>
                         <p>Shows what is in the index, and what more files have changed in any way</p>
+                    </section>
+                    <section>
+                        <h3>Committing</h3>
                         <pre><code>git diff</code></pre>
                         <p>Shows the difference between your latest commit and the current content of the source code files (ie what would be added running `git add .`)</p>
                         <pre><code>git diff --staged</code></pre>
                         <p>Shows the difference between what is in the index and the current content of the source code files (ie what would be added running `git add .`)</p>
+                    </section>
+                    <section>
+                        <h3>Committing</h3>
                         <pre><code>git add &lt;filename&gt;</code></pre>
                         <p>Adds file to the index, ready to be committed</p>
                         <pre><code>git add .</code></pre>
@@ -49,7 +65,7 @@
                         <p>Commits current state of <em>index</em> - in most cases launches some version of vim to enter commit message</p>
                     </section>
                     <section>
-                        <h1>Pushing</h1>
+                        <h3>Pushing</h3>
                         <pre><code>git push</code></pre>
                         <p>Sends all your local commits to the remote repository</p>
                         <pre><code>git remote</code></pre>
@@ -58,15 +74,27 @@
                         <p>Updates your local repository with what is on the remote repository</p>
                     </section>
                     <section>
-                        <h1>Branching</h1>
-                        <pre><code>git checkout &lt;category/branch-name&gt;</code></pre>
-                        <p>Switches your local repository over to another branch</p>
+                        <h3>Branching</h3>
+                        <p>A branch is a split, a fork in the road of development - think of it as a river branching off and eventually merging back together</p>
+                    </section>
+                    <section>
+                        <h3>Branching</h3>
                         <pre><code>git branch</code></pre>
                         <p>Shows a list of all (local) branches</p>
+                        <pre><code>git fetch</code></pre>
+                        <p>Fetches info on new remote branches</p>
+                        <pre><code>git checkout &lt;category/branch-name&gt;</code></pre>
+                        <p>Switches your local repository over to another branch</p>
+                    </section>
+                    <section>
+                        <h3>Branching</h3>
                         <pre><code>git branch &lt;category/branch-name&gt;</code></pre>
                         <p>Makes a new branch, with the current branch as a starting point</p>
                         <pre><code>git checkout -b &lt;category/branch-name&gt;</code></pre>
                         <p>Makes a new branch, and switches to it immediately</p>
+                    </section>
+                    <section>
+                        <h3>Branching</h3>
                         <pre><code>git merge &lt;category/branch-name&gt;</code></pre>
                         <p>Attempts to merge branch branch-name into the current branch</p>
                         <pre><code>git branch -d &lt;category/branch-name&gt;</code></pre>
@@ -75,18 +103,24 @@
                         <p>Deletes branch, even if it has not been fully merged</p>
                     </section>
                     <section>
-                        <h1>Solving conflicts</h1>
+                        <h3>Pull requests</h3>
+                        <p>Not an official git function, but built into several web based git hosts such as github, gitlab</p>
+                        <p>Let's put this in practice</p>
+                    </section>
+                    <section>
+                        <h3>Solving conflicts</h3>
                         <p>Advice: use IDE, or other graphical tool to look at the diff</p>
                     </section>
                     <section>
-                        <h1>What more?</h1>
+                        <h3>What more?</h3>
                         <pre><code>.gitignore</code></pre>
+                        <pre><code>git log</code></pre>
                         <pre><code>git blame</code></pre>
                     </section>
                 </section>
 
                 <section>
-                    <h1>People who successfully completed this course</h1>
+                    <h3>People who successfully completed this course</h3>
                     <p><a href="http://github.com/casperravenhorst/git-starter-course">http://github.com/casperravenhorst/git-starter-course</a></p>
                     <ul>
                         <li>Nobody</li>
