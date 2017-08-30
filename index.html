@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">    
+    <head>
+        <meta charset="utf-8">
+        <title>Reveal.js 3 Slide Demo</title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/moon.css" id="theme">    
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>Git starter course</h1>
+                </section>
+                <section>
+                    <h1>Why use git?</h1>
+                    <ul>
+                        <li>Versioning</li>
+                        <li>Traceable code history</li>
+                        <li>Cleaner code</li>
+                        <li>Distributed system</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Basics</h1>
+                        <p><a href="http://github.com/casperravenhorst/git-starter-course">http://github.com/casperravenhorst/git-starter-course</a></p>
+                    </section>
+                    <section>
+                        <h1>Cloning</h1>
+                        <pre><code>git clone &lt;adres&gt;</code></pre>
+                        <p>Copies a remote repository into the current directory - will make a subfolder git-starter-course in this case.</p>
+                    </section>
+                    <section>
+                        <h1>Committing</h1>
+                        <pre><code>git status</code></pre>
+                        <p>Shows what is in the index, and what more files have changed in any way</p>
+                        <pre><code>git add &lt;filename&gt;</code></pre>
+                        <p>Adds file to the index, ready to be committed</p>
+                        <pre><code>git add .</code></pre>
+                        <p>Adds all changed files (also moves moved files in the commit, and removes removed files)</p>
+                        <pre><code>git commit</code></pre>
+                        <p>Commits current state of <em>index</em> - in most cases launches some version of vim to enter commit message</p>
+                    </section>
+                    <section>
+                        <h1>Pushing</h1>
+                        <pre><code>git push</code></pre>
+                        <p>Sends all your local commits to the remote repository</p>
+                        <pre><code>git remote</code></pre>
+                        <p>Shows information about what place is currently the remote (upstream) repository for your local repository</p>
+                        <pre><code>git pull</code></pre>
+                        <p>Updates your local repository with what is on the remote repository</p>
+                    </section>
+                    <section>
+                        <h1>Branching</h1>
+                        <pre><code>git checkout &lt;category/branch-name&gt;</code></pre>
+                        <p>Switches your local repository over to another branch</p>
+                        <pre><code>git branch</code></pre>
+                        <p>Shows a list of all (local) branches</p>
+                        <pre><code>git branch &lt;category/branch-name&gt;</code></pre>
+                        <p>Makes a new branch, with the current branch as a starting point</p>
+                        <pre><code>git checkout -b &lt;category/branch-name&gt;</code></pre>
+                        <p>Makes a new branch, and switches to it immediately</p>
+                        <pre><code>git merge &lt;category/branch-name&gt;</code></pre>
+                        <p>Attempts to merge branch branch-name into the current branch</p>
+                        <pre><code>git branch -d &lt;category/branch-name&gt;</code></pre>
+                        <p>Deletes branch if it has been fully merged</p>
+                        <pre><code>git branch -D &lt;category/branch-name&gt;</code></pre>
+                        <p>Deletes branch, even if it has not been fully merged</p>
+                    </section>
+                    <section>
+                        <h1>Solving conflicts</h1>
+                        <p>Advice: use IDE, or other graphical tool to look at the diff</p>
+                    </section>
+                    <section>
+                        <h1>What more?</h1>
+                        <pre><code>.gitignore</code></pre>
+                        <pre><code>git blame</code></pre>
+                    </section>
+                </section>
+
+                <section>
+                    <h1>People who successfully completed this course</h1>
+                    <p><a href="http://github.com/casperravenhorst/git-starter-course">http://github.com/casperravenhorst/git-starter-course</a></p>
+                    <ul>
+                        <li>Nobody</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            Reveal.initialize({
+                // reveal options go here
+            });
+        </script>
+    </body>
+</html>
